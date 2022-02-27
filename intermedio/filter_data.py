@@ -87,8 +87,7 @@ def run():
     platzi_workers_2 = list(map(lambda worker: worker['name'], platzi_workers_2))
     
     adults_2 = [ worker['name'] for worker in DATA if worker['age'] > 18]
-    old_people_2 = [ worker | {"old": worker["age"] > 70} for worker in DATA]
-
+    old_people_2 = [worker | {"old": worker["age"] > 70} for worker in DATA]
     print(old_people_2)
 
 

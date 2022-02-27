@@ -1,6 +1,7 @@
 def divisors(num):
     try:
         if num < 1:
+            # Raise es una funcion que lanza una excepcion
             raise ValueError("Number must be greater than 0")
         return [i for i in range(1, num + 1) if num % i == 0]
     except Exception as e:
